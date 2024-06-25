@@ -1,0 +1,71 @@
+.hero {
+	width: 100%;
+	height: calc(100vh - var(--header-h));
+	padding: 1rem;
+
+	&__wrapper {
+		height: 100%;
+		background-color: #383838;
+		border-radius: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		padding-block: 10rem;
+		background-image: linear-gradient(transparent, gray),
+			url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		&-title {
+			font-family: var(--pixelify);
+			font-weight: 400;
+			font-size: 64px;
+			color: var(--primary);
+		}
+
+		&-desc {
+			font-size: 16px;
+			color: var(--secondary);
+		}
+	}
+}
+
+.blogs {
+	padding: 1rem;
+	width: 100%;
+
+	&__wrapper {
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: repeat(4, 1fr);
+
+		&-cover {
+			height: 300px;
+			width: 100%;
+			background-color: #d9d9d9;
+			border-radius: 22px;
+			margin-bottom: 20px;
+		}
+
+		&-card {
+			padding: 1rem;
+			border-radius: 32px;
+			background-color: #383838;
+		}
+
+		&-text {
+			padding-bottom: 0.5rem;
+		}
+
+		&-title {
+			font-size: 24px;
+		}
+
+		&-desc {
+			font-size: 16px;
+			color: #ababab;
+		}
+	}
+}
